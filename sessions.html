@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RitmStyle</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo-wrap">
+                <a href="./index.html" class="logo">
+                    <img src="./img/logo.svg" alt="Логотип салона RitmStyle" width="60" height="60">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link" href="./index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#sessions">
+                            Сеансы
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#reviews">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#contacts">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="./news.html">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">
+                            Обо мне
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="./blogs.html">
+                            Блог
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__button button" type="button">
+                Заказать звонок
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="sessions-page">
+            <h2 class="sessions-page__title title">Новый формат сеансов</h2>
+            <div class="sessions-page__wrap">
+                <div class="sessions-page__content">
+                    <p class="sessions-page__text sessions-page__text--date">
+                        13.02.2022
+                    </p>
+                    <h3 class="sessions-page__subtitle">
+                        Новый формат сеансов
+                    </h3>
+                    <p class="sessions-page__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget massa vitae tempus at pretium
+                        lacus viverra. Vitae libero vivamus quis enim quam vitae dictumst nulla duis. Sed nisl nibh et
+                        morbi tristique suspendisse morbi. Consequat facilisi tortor consectetur magnis odio. Risus,
+                        aenean tortor cras consectetur lacus, ut erat ac et. Fermentum aliquam ac egestas eget risus a.
+                        Maecenas sed pellentesque bibendum vitae at praesent sed. Amet pretium arcu gravida arcu ut dui
+                        sem quis id. Tristique in leo donec proin odio eget. Neque ut in egestas lacus sit nunc, nec.
+                        Proin mattis augue sit leo sagittis nam id accumsan. Pulvinar nunc fermentum vulputate ultrices
+                        pulvinar sed ultrices quis.
+                    </p>
+                    <p class="sessions-page__text">
+                        Tempor facilisis tellus ac, odio. A amet congue tristique nibh malesuada lectus. Purus quam
+                        dapibus rhoncus iaculis amet tristique. Mattis fusce lorem fames mauris orci rhoncus, amet
+                        fringilla. Quis integer vitae at vitae urna etiam sed eu sit.
+                        Vitae turpis ullamcorper habitant fermentum aliquet volutpat.
+                    </p>
+                    <p class="sessions-page__text">
+                        Vitae turpis ullamcorper habitant fermentum aliquet volutpat.
+                    </p>
+                </div>
+                <div class="sessions-page__image">
+                    <picture>
+                        <source type="image/webp" srcset="img/blog.webp, img/blog@2x.webp 2x">
+                        <img src="./img/blog.jpg" srcset="./img/blog@2x.jpg 2x"
+                            alt="Фото подводного плавания" width="526" height="365">
+                    </picture>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+    </main>
+    <footer>
+        <p class="foter__text">
+            © 2018-2022 RitmStyle
+        </p>
+        <p class="foter__text">
+            Сделано d-e-n.info
+        </p>
+    </footer>
+
+
+
+    <div class="modal modal-closed">
+        <section class="form form--modal">
+            <form method="POST">
+                <h2 class="form__title form__title--modal">
+                    Закажите звонок
+                </h2>
+                <p class="form__text form__text--modal">
+                    Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+                </p>
+                <ul class="form__list form__list--modal">
+                    <li class="form__item">
+                        <input type="text" name="text" required placeholder="Имя" aria-label="Введите Ваше Имя">
+                    </li>
+                    <li class="form__item">
+                        <input type="tel" name="tel" minlength="17" required placeholder="Телефон"
+                            aria-label="Введите Ваш номер телефона">
+                    </li>
+                    <li class="form__item form__item--modal-textarea">
+                        <textarea name="subject" placeholder="Ваш вопрос"></textarea>
+                    </li>
+                    <li class="form__item">
+                        <button class="button form__button" type="submit" aria-label="Отправить форму">
+                            Отправить
+                        </button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+    </div>
+
+
+</body>
+
+</html>
