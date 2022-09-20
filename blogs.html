@@ -16,167 +16,194 @@
 
     <header>
         <div class="container">
-            <div class="logo-wrap">
-                <a href="./index.html" class="logo">
-                    <img src="./img/logo.svg" alt="Логотип салона RitmStyle" width="60" height="60">
-                </a>
+            <div class="header__wrap header__wrap--decorate">
+                <div class="logo-wrap">
+                    <a href="./index.html" class="logo">
+                        <img src="./img/logo.svg" alt="Логотип салона RitmStyle" width="60" height="60">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link" href="./index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#sessions">
+                                Сеансы
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#reviews">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#contacts">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">
+                                Обо мне
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="./blogs.html">
+                                Блог
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__button button" type="button">
+                    Заказать звонок
+                </button>
             </div>
-            <nav class="nav">
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a class="header__link" href="./index.html">
-                            Главная
-                        </a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#sessions">
-                            Сеансы
-                        </a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#reviews">
-                            Отзывы
-                        </a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#contacts">
-                            Контакты
-                        </a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="./news.html">
-                            Новости
-                        </a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#">
-                            Обо мне
-                        </a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#">
-                            Блог
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="header__button button" type="button">
-                Заказать звонок
-            </button>
         </div>
     </header>
 
     <main>
-
-        <section class="blogs-page">
-            <h2 class="blogs-page__title title">Блог</h2>
-            <div class="blogs-page__wrap">
-                <div class="blogs-page__content">
-                    <p class="blogs-page__text sessions-page__text--date">
-                        13.02.2022
-                    </p>
-                    <h3 class="blogs-page__subtitle">
-                        Новый формат сеансов
-                    </h3>
-                    <p class="blogs-page__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget massa vitae tempus at pretium
-                        lacus viverra. Vitae libero vivamus quis enim quam vitae dictumst nulla duis. Sed nisl nibh et
-                        morbi tristique suspendisse morbi. Consequat facilisi tortor consectetur magnis odio. Risus,
-                        aenean tortor cras consectetur lacus, ut erat ac et. Fermentum aliquam ac egestas eget risus a.
-                        Maecenas sed pellentesque bibendum vitae at praesent sed. Amet pretium arcu gravida arcu ut dui
-                        sem quis id. Tristique in leo donec proin odio eget. Neque ut in egestas lacus sit nunc, nec.
-                        Proin mattis augue sit leo sagittis nam id accumsan. Pulvinar nunc fermentum vulputate ultrices
-                        pulvinar sed ultrices quis.
-                    </p>
-                    <a class="blogs-page__button button" href="#" >
-                        Читать статью
-                    </a>
+        <div class="container">
+            <section class="blogs-page">
+                <h2 class="blogs-page__title title">Блог</h2>
+                <div class="blogs-page__container">
+                    <div class="blogs-page__wrap">
+                        <div class="blogs-page__image">
+                            <picture>
+                                <source type="image/webp" srcset="img/blog.webp, img/blog@2x.webp 2x">
+                                <img src="./img/blog.jpg" srcset="./img/blog@2x.jpg 2x" alt="Фото подводного плавания"
+                                    width="526" height="365">
+                            </picture>
+                        </div>
+                        <div class="blogs-page__content">
+                            <p class="blogs-page__text blogs-page__text--date">
+                                13.02.2022
+                            </p>
+                            <h3 class="blogs-page__subtitle">
+                                Новый формат сеансов
+                            </h3>
+                            <p class="blogs-page__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget massa vitae tempus at
+                                pretium
+                                lacus viverra. Vitae libero vivamus quis enim quam vitae dictumst nulla duis. Sed nisl
+                                nibh
+                                et
+                                morbi tristique suspendisse morbi. Consequat facilisi tortor consectetur magnis odio.
+                                Risus,
+                                aenean tortor cras consectetur lacus, ut erat ac et. Fermentum aliquam ac egestas eget
+                                risus
+                                a.
+                                Maecenas sed pellentesque bibendum vitae at praesent sed. Amet pretium arcu gravida arcu
+                                ut
+                                dui
+                                sem quis id. Tristique in leo donec proin odio eget. Neque ut in egestas lacus sit nunc,
+                                nec.
+                                Proin mattis augue sit leo sagittis nam id accumsan. Pulvinar nunc fermentum vulputate
+                                ultrices
+                                pulvinar sed ultrices quis.
+                            </p>
+                            <a class="blogs-page__button button" href="#">
+                                Читать статью
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blogs-page__wrap">
+                        <div class="blogs-page__image">
+                            <picture>
+                                <source type="image/webp" srcset="img/blog.webp, img/blog@2x.webp 2x">
+                                <img src="./img/blog.jpg" srcset="./img/blog@2x.jpg 2x" alt="Фото подводного плавания"
+                                    width="526" height="365">
+                            </picture>
+                        </div>
+                        <div class="blogs-page__content">
+                            <p class="blogs-page__text blogs-page__text--date">
+                                13.02.2022
+                            </p>
+                            <h3 class="blogs-page__subtitle">
+                                Новый формат сеансов
+                            </h3>
+                            <p class="blogs-page__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget massa vitae tempus at
+                                pretium
+                                lacus viverra. Vitae libero vivamus quis enim quam vitae dictumst nulla duis. Sed nisl
+                                nibh
+                                et
+                                morbi tristique suspendisse morbi. Consequat facilisi tortor consectetur magnis odio.
+                                Risus,
+                                aenean tortor cras consectetur lacus, ut erat ac et. Fermentum aliquam ac egestas eget
+                                risus
+                                a.
+                                Maecenas sed pellentesque bibendum vitae at praesent sed. Amet pretium arcu gravida arcu
+                                ut
+                                dui
+                                sem quis id. Tristique in leo donec proin odio eget. Neque ut in egestas lacus sit nunc,
+                                nec.
+                                Proin mattis augue sit leo sagittis nam id accumsan. Pulvinar nunc fermentum vulputate
+                                ultrices
+                                pulvinar sed ultrices quis.
+                            </p>
+                            <a class="blogs-page__button button" href="#">
+                                Читать статью
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="blogs-page__image">
-                    <picture>
-                        <source type="image/webp" srcset="img/blog.webp, img/blog@2x.webp 2x">
-                        <img src="./img/blog.jpg" srcset="./img/blog@2x.jpg 2x" alt="Фото подводного плавания"
-                            width="526" height="365">
-                    </picture>
-                </div>
-            </div>
-            <div class="blogs-page__wrap">
-                <div class="blogs-page__content">
-                    <p class="blogs-page__text sessions-page__text--date">
-                        13.02.2022
-                    </p>
-                    <h3 class="blogs-page__subtitle">
-                        Новый формат сеансов
-                    </h3>
-                    <p class="blogs-page__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget massa vitae tempus at pretium
-                        lacus viverra. Vitae libero vivamus quis enim quam vitae dictumst nulla duis. Sed nisl nibh et
-                        morbi tristique suspendisse morbi. Consequat facilisi tortor consectetur magnis odio. Risus,
-                        aenean tortor cras consectetur lacus, ut erat ac et. Fermentum aliquam ac egestas eget risus a.
-                        Maecenas sed pellentesque bibendum vitae at praesent sed. Amet pretium arcu gravida arcu ut dui
-                        sem quis id. Tristique in leo donec proin odio eget. Neque ut in egestas lacus sit nunc, nec.
-                        Proin mattis augue sit leo sagittis nam id accumsan. Pulvinar nunc fermentum vulputate ultrices
-                        pulvinar sed ultrices quis.
-                    </p>
-                    <a class="blogs-page__button button" href="#" >
-                        Читать статью
-                    </a>
-                </div>
-                <div class="blogs-page__image">
-                    <picture>
-                        <source type="image/webp" srcset="img/blog.webp, img/blog@2x.webp 2x">
-                        <img src="./img/blog.jpg" srcset="./img/blog@2x.jpg 2x" alt="Фото подводного плавания"
-                            width="526" height="365">
-                    </picture>
-                </div>
-            </div>
-
-
-
-
-        </section>
-
+            </section>
+        </div>
     </main>
     <footer>
-        <p class="foter__text">
-            © 2018-2022 RitmStyle
-        </p>
-        <p class="foter__text">
-            Сделано d-e-n.info
-        </p>
+        <div class="container">
+            <div class="footer__wrap footer__wrap--decorate">
+                <p class="foter__text">
+                    © 2018-2022 RitmStyle
+                </p>
+                <p class="foter__text">
+                    Сделано d-e-n.info
+                </p>
+            </div>
+        </div>
     </footer>
 
+<!-- modal-closed  modal-show-->
 
+<div class="modal">
+    <section class="form">
+        <form method="POST">
+            <h2 class="form__title title">
+                Закажите звонок
+            </h2>
+            <p class="form__text">
+                Оставьте контакты, мы проконсультируем вас в удобное время
+            </p>
+            <ul class="form__list">
+                <li class="form__item">
+                    <input type="text" name="text" required placeholder="Имя" aria-label="Введите Ваше Имя">
+                </li>
+                <li class="form__item">
+                    <input type="tel" name="tel" minlength="17" required placeholder="Телефон"
+                        aria-label="Введите Ваш номер телефона">
+                </li>
+                <li class="form__item form__item--modal-textarea">
+                    <textarea name="subject" placeholder="Ваш вопрос"></textarea>
+                </li>
+                <li class="form__item">
+                    <button class="button form__button" type="submit" aria-label="Отправить форму">
+                        Отправить
+                    </button>
+                </li>
+            </ul>
+        </form>
+        <button class="form__button form__button--modal" type="button"></button>
+    </section>
+</div>
 
-    <div class="modal modal-closed">
-        <section class="form form--modal">
-            <form method="POST">
-                <h2 class="form__title form__title--modal">
-                    Закажите звонок
-                </h2>
-                <p class="form__text form__text--modal">
-                    Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
-                </p>
-                <ul class="form__list form__list--modal">
-                    <li class="form__item">
-                        <input type="text" name="text" required placeholder="Имя" aria-label="Введите Ваше Имя">
-                    </li>
-                    <li class="form__item">
-                        <input type="tel" name="tel" minlength="17" required placeholder="Телефон"
-                            aria-label="Введите Ваш номер телефона">
-                    </li>
-                    <li class="form__item form__item--modal-textarea">
-                        <textarea name="subject" placeholder="Ваш вопрос"></textarea>
-                    </li>
-                    <li class="form__item">
-                        <button class="button form__button" type="submit" aria-label="Отправить форму">
-                            Отправить
-                        </button>
-                    </li>
-                </ul>
-            </form>
-        </section>
-    </div>
+<script src="./script.js"></script>
 
 
 </body>

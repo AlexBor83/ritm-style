@@ -29,7 +29,7 @@
                             </a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="./sessions.html">
+                            <a class="header__link" href="#">
                                 Сеансы
                             </a>
                         </li>
@@ -395,25 +395,26 @@
     </footer>
 
 
+<!-- modal-closed  modal-show-->
 
-    <!-- <div class="modal modal-closed">
-        <section class="form form--modal">
+    <div class="modal">
+        <section class="form">
             <form method="POST">
-                <h2 class="form__title form__title--modal">
+                <h2 class="form__title title">
                     Закажите звонок
                 </h2>
-                <p class="form__text form__text--modal">
-                    Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+                <p class="form__text">
+                    Оставьте контакты, мы проконсультируем вас в удобное время
                 </p>
-                <ul class="form__list form__list--modal">
+                <ul class="form__list">
                     <li class="form__item">
-                        <input type="text" name="text" required placeholder="Имя" aria-label="Введите Ваше Имя">
+                        <input type="text" name="text" required placeholder="Имя на русском" aria-label="Введите ваше имя">
                     </li>
                     <li class="form__item">
-                        <input type="tel" name="tel" minlength="17" required placeholder="Телефон"
-                            aria-label="Введите Ваш номер телефона">
+                        <input type="tel" name="tel" minlength="17" required placeholder="Ваш номер телефона не короче 6 символов"
+                            aria-label="Введите Ваш номер телефона не короче 6 символов">
                     </li>
-                    <li class="form__item form__item--modal-textarea">
+                    <li class="form__item form__item--textarea">
                         <textarea name="subject" placeholder="Ваш вопрос"></textarea>
                     </li>
                     <li class="form__item">
@@ -423,8 +424,11 @@
                     </li>
                 </ul>
             </form>
+            <button class="form__button form__button--modal" type="button"></button>
         </section>
-    </div> -->
+    </div>
+
+    <script src="./script.js"></script>
 
 
 </body>
