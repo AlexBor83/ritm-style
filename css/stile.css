@@ -9,8 +9,6 @@
   --violet: #892be2;
   --blackLight: rgba(0, 0, 0, 0.6);
   --red: #ee3643;
-
-  /* добавить медиа запросы  и ретину*/
 }
 
 img {
@@ -229,12 +227,12 @@ body {
 
 .slogan__text::before {
   background-image: url('../img/decor-left-wight.svg');
-  margin-left: 94px;
+  margin-left: -94px;
 }
 
 .slogan__text::after {
   background-image: url('../img/decor-right-wight.svg');
-  margin-left: 64px;
+  margin-left: 66px;
 }
 
 .sessions {
