@@ -4,6 +4,8 @@ const body = document.querySelector('body');
 const modal = document.querySelector('.modal');
 const form = document.querySelector('form');
 
+// Функция анимации
+
 function animate({ timing, draw, duration }) {
   let start = performance.now();
 
@@ -22,6 +24,23 @@ function animate({ timing, draw, duration }) {
     }
   });
 }
+
+// Плавный скрол
+
+body.addEventListener('click', (e) => {
+    if (
+      e.target.matches('.nav ul li .header__link--page')) {
+      e.preventDefault();
+      
+      const item = e.target.closest('a');
+      const itemId = item.getAttribute('href').substring(1);
+
+      document.getElementById(itemId).scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+      });
+    } 
+  });
 
 // Открытие модального окна
 
@@ -173,3 +192,19 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   submitForm();
 });
+
+
+// СЛАЙДЕР
+
+// const swiper = new Swiper('.swiper', {
+//   // Optional parameters
+//   slidesPerView: 1,
+//   loop: true,
+
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+
+//   // Navigation arrows  
+// });
